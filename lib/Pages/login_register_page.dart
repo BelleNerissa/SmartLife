@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:smartlife/auth.dart';
 
+import '../auth.dart';
 import 'home_page.dart';
 
 class LoginPage extends StatefulWidget {

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:smartlife/auth.dart';
-import 'package:smartlife/pages/personal_info.dart';
+import 'package:practice/Pages/personal_info.dart';
+// import 'package:smartlife/auth.dart';
+// import 'package:smartlife/pages/personal_info.dart';
+
+import '../auth.dart';
 
 class ReceiptDetailsPage extends StatefulWidget {
   const ReceiptDetailsPage({super.key, required this.selectedReceipted});

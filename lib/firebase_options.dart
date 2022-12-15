@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,7 +28,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for windows - '
@@ -43,44 +49,21 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyATviA3cwBIeC2B3kYllaJhx17ahpTb9nk',
-    appId: '1:591783490081:web:7fc48040c51c6c6e27e960',
-    messagingSenderId: '591783490081',
-    projectId: 'smartlife2-3c3b4',
-    authDomain: 'smartlife2-3c3b4.firebaseapp.com',
-    databaseURL: 'https://smartlife2-3c3b4-default-rtdb.firebaseio.com',
-    storageBucket: 'smartlife2-3c3b4.appspot.com',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDgMjxy3HIAu9T_Q67J_mlrpj8YSKv05T4',
-    appId: '1:591783490081:android:c48903ee849d75fd27e960',
-    messagingSenderId: '591783490081',
-    projectId: 'smartlife2-3c3b4',
-    databaseURL: 'https://smartlife2-3c3b4-default-rtdb.firebaseio.com',
-    storageBucket: 'smartlife2-3c3b4.appspot.com',
+    apiKey: 'AIzaSyDpHmiKZHjjiJ-bzJPygjgsBlF4uesKRY0',
+    appId: '1:1009577821573:android:188176b640fb68c0c6b0ec',
+    messagingSenderId: '1009577821573',
+    projectId: 'smartlife-master',
+    storageBucket: 'smartlife-master.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyArTPWY7oQKz5Q7XtSRvGGROo6vDs3QbVY',
-    appId: '1:591783490081:ios:e664e438c4ffe78227e960',
-    messagingSenderId: '591783490081',
-    projectId: 'smartlife2-3c3b4',
-    databaseURL: 'https://smartlife2-3c3b4-default-rtdb.firebaseio.com',
-    storageBucket: 'smartlife2-3c3b4.appspot.com',
-    iosClientId: '591783490081-j68d9vrkt2qvs594bo8pk8vaka3h1ac8.apps.googleusercontent.com',
-    iosBundleId: 'com.example.smartlife',
-  );
-
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyArTPWY7oQKz5Q7XtSRvGGROo6vDs3QbVY',
-    appId: '1:591783490081:ios:e664e438c4ffe78227e960',
-    messagingSenderId: '591783490081',
-    projectId: 'smartlife2-3c3b4',
-    databaseURL: 'https://smartlife2-3c3b4-default-rtdb.firebaseio.com',
-    storageBucket: 'smartlife2-3c3b4.appspot.com',
-    iosClientId: '591783490081-j68d9vrkt2qvs594bo8pk8vaka3h1ac8.apps.googleusercontent.com',
-    iosBundleId: 'com.example.smartlife',
+    apiKey: 'AIzaSyCMbYh7wp0Fr9Fx9LIquMK3eRTHUJRaT3Q',
+    appId: '1:1009577821573:ios:bcb5c92fa1e4812ac6b0ec',
+    messagingSenderId: '1009577821573',
+    projectId: 'smartlife-master',
+    storageBucket: 'smartlife-master.appspot.com',
+    iosClientId: '1009577821573-on5sj7keekoq7rb0s7b1ei2pvdg2bip3.apps.googleusercontent.com',
+    iosBundleId: 'com.example.practice',
   );
 }

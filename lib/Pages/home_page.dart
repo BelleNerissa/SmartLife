@@ -3,10 +3,13 @@ import 'dart:async';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
+import 'package:practice/Pages/receipts.dart';
 import 'package:realm/realm.dart';
-import 'package:smartlife/Pages/receipts.dart';
-import 'package:smartlife/auth.dart';
 
+// import 'package:smartlife/Pages/receipts.dart';
+// import 'package:smartlife/auth.dart';
+
+import '../auth.dart';
 import '../schemas/user_schema.dart';
 import '../services/user_service.dart';
 import 'personal_info.dart';

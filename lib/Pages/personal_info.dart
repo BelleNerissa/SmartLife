@@ -3,9 +3,9 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:realm/realm.dart';
-import 'package:smartlife/Pages/login_register_page.dart';
-import 'package:smartlife/auth.dart';
 
+import '../auth.dart';
+import 'login_register_page.dart';
 import '../schemas/user_schema.dart';
 import '../services/user_service.dart';
 import 'constants.dart';

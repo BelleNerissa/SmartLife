@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:smartlife/Pages/personal_info.dart';
 
 import '../services/user_service.dart';
 import 'home_page.dart';
+import 'personal_info.dart';
 
 class updateUser extends StatefulWidget {
   @override

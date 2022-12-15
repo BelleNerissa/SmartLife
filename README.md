@@ -14,11 +14,11 @@ Permitir adicionar e deletar uma nova refeição.
 Exibir dietas prontas, com informações sobre calorias, tempo de preparo e instruções de preparo para o usuário aderir de acordo com suas preferências alimentares.
 
 
-// Prints
 ![image](https://user-images.githubusercontent.com/49173787/207754326-ea3da232-c257-4008-859a-6269106a4fb3.png)
 
+![image](https://user-images.githubusercontent.com/49173787/207754899-1cc5824c-9aa0-4839-997a-36eb8a7d2486.png)
 
-// Arquitetura da aplicação
+
 ![image](https://user-images.githubusercontent.com/49173787/207754562-2f1b6f69-9d9c-4f20-a88e-b6e670a663e3.png)
 
 
